@@ -1,10 +1,8 @@
-s=2
-print(f'hello {s} s')
+def func(x):
+    def func2(y):
+        return x+y
+    return func2
 
 
-Increment
-Increment2
-PythonProject
-newnew
-onetwothree
-helllllllllllll2222
+new = func('a')
+print(new('b'))
