@@ -1,8 +1,12 @@
-def func(x):
-    def func2(y):
-        return x+y
-    return func2
+def ab(a):
+    return 10//a
 
 
-new = func('a')
-print(new('b'))
+try:
+    print(ab(int(input())))
+except ZeroDivisionError:
+    print('Ne vvodi o')
+
+
+
+
